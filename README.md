@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## GameStore
+
+This is a multi-page e-commerce web application built using Next.Js framework
+
+This [Next.js](https://nextjs.org/) project is bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
@@ -15,6 +19,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 npm install @mui/material @emotion/react @emotion/styled
 
-## The Interactive buttons are pure CSS from:
+## The Interactive buttons are pure CSS:
 
-UIverse.io
+[Uiverse](https://uiverse.io/)
