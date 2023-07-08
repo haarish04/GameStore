@@ -15,6 +15,7 @@
   -webkit-transition-property: color;
   transition-property: color;
   padding-top: 20px;
+  padding-left:25px;
 }
 
 .button:focus,
@@ -25,7 +26,7 @@
 .button:focus:after,
 .button:hover:after {
   width: 100%;
-  left: 0%;
+  left: 9%;
 }
 
 .button:after {
@@ -45,58 +46,60 @@
   transition-property: width, left;
 }
 
-.Stack {
+
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.loginbutton {
+.middleButtons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon{
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+.loginbtn {
+  display: inline-block;
+  padding: 0.5rem 1.8rem;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid ;
+  cursor: pointer;
+  position: relative;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+  font-family: inherit;
+  margin-right: 25px;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  font-family: inherit;
-  font-weight: 800;
-  width: 8em;
-  position: relative;
-  height: 2.5em;
-  border: 3px ridge #FFFFFF;
-  outline: none;
-  background-color: transparent;
-  color: white;
-  transition: 1s;
-  border-radius: 0.3em;
-  
-}
+  margin-top: 20px;
 
-.loginbutton::after {
+ }
+ 
+ .loginbtn::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #000000;
-  transition: 0.5s;
-  transform-origin: center;
-}
-
-.loginbutton::before {
-  content: "";
-  transform-origin: center;
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #000000;
-  transition: 0.5s;
-}
-
-.loginbutton:hover::before, .loginbutton:hover::after {
-  transform: scale(0)
-}
-
-.loginbutton:hover {
-  box-shadow: inset 0px 0px 25px #FFFFFF;
-}
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(24, 59, 111);
+  transform: translateX(-100%);
+  transition: all .3s;
+  z-index: -1;
+ }
+ 
+ .loginbtn:hover::before {
+  transform: translateX(0);
+ }
