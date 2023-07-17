@@ -4,4 +4,4 @@ DAY 1: Design and Layout of UI
 DAY 2: Color theme and design
 DAY 3: Flow of pages
 DAY 4: Main Page Buttons
-DAY 5: Working on side nav bar
+DAY 5&6: Working on image Slider
