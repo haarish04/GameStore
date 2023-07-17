@@ -103,3 +103,10 @@
  .loginbtn:hover::before {
   transform: translateX(0);
  }
+
+ .Slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 300px;
+ }
